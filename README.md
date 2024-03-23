@@ -228,18 +228,38 @@ caracteres juntos, es decir, sin espacios, de manera que, el programa imprime un
 de la línea donde se encontró el caracter, el token encontrado y el tipo de token. En este caso nuestra
 expresión es var_1/my_num=6.32, la cual contiene variables, un operador, asignación y un número
 real, y podemos ver en la terminal como se identifica cada token. 
+
+![image](https://github.com/Silvana-Ruiz/LexerExpressionParser/assets/67821436/00ba0144-065b-4f0b-9f77-393c10b7795c)
+
+![image](https://github.com/Silvana-Ruiz/LexerExpressionParser/assets/67821436/fabd2d3e-864f-4018-93de-0b25c8fdfd9b)
+
 ## Caso 2 
 En el segundo caso de prueba se lee un archivo donde solamente existe un comentario que dice //este
 es un comentario (123+5)=7. Este comentario contiene texto e incluso una expresión aritmética, sin
 embargo, el programa identifica que todo lo contenido después de // pertenece al comentario. El
 programa nos indica que encuentra el token que pusimos y que es de tipo comentario. 
+
+![image](https://github.com/Silvana-Ruiz/LexerExpressionParser/assets/67821436/6405c8d2-f264-4caa-8126-3f68c6d4cb19)
+
+![image](https://github.com/Silvana-Ruiz/LexerExpressionParser/assets/67821436/3e018304-6f5a-457b-8634-2d0e749b1898)
+
+
 ## Caso 3 
 En este caso el archivo lexer.txt contiene una expresión aritmética con espacios entre los operadores,
 símbolos y números. Podemos ver en el output de la terminal los índices, en donde ignora los espacios
 puestos y va detectando solamente los tokens, así como su tipo. En este caso podemos ver en la
-expresión números enteros, números negativos, reales, operadores, y paréntesis . 
+expresión números enteros, números negativos, reales, operadores, y paréntesis.
+
+![image](https://github.com/Silvana-Ruiz/LexerExpressionParser/assets/67821436/24e5a551-56d6-4cdd-91d6-11f15b321b29)
+
+![image](https://github.com/Silvana-Ruiz/LexerExpressionParser/assets/67821436/bd451073-275e-4629-a8de-3ca115ac7ff5)
+
+
 ## Caso 4 
 En este caso de prueba, el archivo lexer.txt contiene múltiples expresiones aritméticas y, cada una está
 compuesta por diferentes tokens como variables, enteros, reales, operadores, paréntesis y comentarios
 y también están separados por ninguno, uno o múltiples espacios. Así pues, se puede visualizar que la
 tabla con los tokens y sus tipos se imprimió correctamente. 
+![image](https://github.com/Silvana-Ruiz/LexerExpressionParser/assets/67821436/c4a779c9-358c-4c19-a534-948531f079b5)
+
+![image](https://github.com/Silvana-Ruiz/LexerExpressionParser/assets/67821436/f8b9d0de-f3fd-425d-b0ea-cdb8e672453c)
